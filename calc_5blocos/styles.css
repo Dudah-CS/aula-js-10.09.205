@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background-image: url('img/img1.jpeg');
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* ESTILO DA CALC DO IMD*/
+#imc-calculator {
+    border: 2px solid #007bff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: none; 
+}
+
+/* ESTILO DO GERADOR DE CORES */
+#color-palette-generator {
+    border: 2px solid #28a745;
+}
+
+#palette {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.color-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.color-box:hover {
+    transform: scale(1.05);
+}
+
+/* BOTÕES */
+#calculate-btn, #generate-btn {
+    width: 100%;
+    padding: 0; 
+    height: 50px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center; 
+    color: #f5f5f5;
+    font-family: 'Arial Bold';
+    font-weight: 600;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+}
+
+#calculate-btn {
+    background-image: url('img/imgBt2.jpeg');
+}
+
+#calculate-btn:hover {
+    
+    filter: brightness(1.2);
+}
+
+#generate-btn {
+    background-image: url('img/imgBt1.jpeg');
+}
+
+#generate-btn:hover {
+    filter: brightness(1.2);
+}

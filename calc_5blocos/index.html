@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ******************************** CALCULADORA IMC ******************************** -->
+    <div id="imc-calculator" class="container">
+        <h2>Calculadora de IMC</h2>
+        <div class="input-group">
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" step="0.1" placeholder="Ex: 70.5" required>
+        </div>
+        <div class="input-group">
+            <label for="height">Altura (m):</label>
+            <input type="number" id="height" step="0.01" placeholder="Ex: 1.75" required>
+        </div>
+        <button id="calculate-btn">Calcular IMC</button>
+        <div id="result"></div>
+    </div>
+
+    <!-- ******************************** GERADOR DE COR ******************************** -->
+    <div id="color-palette-generator" class="container">
+        <h2>Gerador de Paleta de Cores</h2>
+        <div id="palette">
+            <div class="color-box"></div>
+            <div class="color-box"></div>
+            <div class="color-box"></div>
+            <div class="color-box"></div>
+            <div class="color-box"></div>
+        </div>
+        <button id="generate-btn">Gerar Cores</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
